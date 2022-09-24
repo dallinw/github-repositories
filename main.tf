@@ -11,3 +11,17 @@ resource "github_repository" "terraform_workspaces" {
     "terraform"
   ]
 }
+
+resource "github_repository" "github_repositories" {
+  name        = "github-repositories"
+  description = "Github Repo Configurations"
+
+  visibility             = "public"
+  auto_init              = true
+  license_template       = "gpl-3.0"
+  delete_branch_on_merge = true
+
+  topics = [
+    "terraform"
+  ]
+}
