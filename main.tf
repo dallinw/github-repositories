@@ -27,7 +27,7 @@ resource "github_repository" "github_repositories" {
 }
 
 resource "github_repository" "aws_root" {
-  name        = "aws_root"
+  name        = "aws-root"
   description = "AWS Root Account Configuration"
 
   visibility             = "public"
@@ -36,7 +36,7 @@ resource "github_repository" "aws_root" {
   delete_branch_on_merge = true
 
   topics = [
-    "AWS",
-    "Terraform"
+    "aws",
+    "terraform"
   ]
 }
