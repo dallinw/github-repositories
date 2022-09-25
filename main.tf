@@ -55,3 +55,18 @@ resource "github_repository" "helm_charts" {
     "kubernetes"
   ]
 }
+
+resource "github_repository" "gcp_root" {
+  name        = "gcp-root"
+  description = "Google Cloud Platform Root Account Configuration"
+
+  visibility             = "public"
+  auto_init              = true
+  license_template       = "gpl-3.0"
+  delete_branch_on_merge = true
+
+  topics = [
+    "gcp",
+    "terraform"
+  ]
+}
