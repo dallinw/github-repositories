@@ -25,7 +25,7 @@ resource "github_repository" "earnings_strategy_trader" {
 }
 
 resource "github_repository" "metadata_aggregator" {
-  name        = "metadata_aggregator"
+  name        = "metadata-aggregator"
   description = "Utility to pull and parse data from around the web"
 
   visibility             = "private"
