@@ -38,3 +38,18 @@ resource "github_repository" "fundamentals" {
     "batch"
   ]
 }
+
+resource "github_repository" "sentiments" {
+  name        = "sentiments"
+  description = "Batch Utility to pull and parse data sentiments"
+
+  visibility             = "private"
+  auto_init              = true
+  license_template       = "gpl-3.0"
+  delete_branch_on_merge = true
+
+  topics = [
+    "trading",
+    "batch"
+  ]
+}
