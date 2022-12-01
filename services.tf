@@ -24,9 +24,9 @@ resource "github_repository" "earnings_strategy_trader" {
   ]
 }
 
-resource "github_repository" "metadata_aggregator" {
-  name        = "metadata-aggregator"
-  description = "Utility to pull and parse data from around the web"
+resource "github_repository" "fundamentals" {
+  name        = "fundamentals"
+  description = "Batch Utility to pull and parse data fundamental company data"
 
   visibility             = "private"
   auto_init              = true
