@@ -53,3 +53,18 @@ resource "github_repository" "sentiments" {
     "batch"
   ]
 }
+
+resource "github_repository" "prices" {
+  name        = "prices"
+  description = "Batch Utility to pull and parse price sentiments"
+
+  visibility             = "private"
+  auto_init              = true
+  license_template       = "gpl-3.0"
+  delete_branch_on_merge = true
+
+  topics = [
+    "trading",
+    "batch"
+  ]
+}
